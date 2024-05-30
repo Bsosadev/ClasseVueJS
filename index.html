@@ -12,8 +12,8 @@
 <body>
     <div id="app">
         <h1> {{ titulo }}</h1>
-        <div class="discoteca" v-for="discoteca in discotecas" :key="discoteca.nombre">
-            <img class="img" :src="discoteca.imagen" :alt="discoteca.nombre">
+        <div class="discoteca" v-for="discoteca in discotecas" >
+            <img class="img" :src="discoteca.imagen">
             <h3>{{ discoteca.nombre }}</h3>
             <p>{{ discoteca.descripcion }}</p>
             <p>Ubicación: {{ discoteca.ubicacion }}</p>
